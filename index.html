@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tainted Return</title>
+</head>
+
+<body>
+    <img id="startScreen" class="disappear" src="img/startscherm.png" alt="start scherm">
+    <img id="introScreen" class="disappear" src="img/intro1.png" alt="intro scherm">
+
+
+    <div id="wholeCanvas">
+        <canvas></canvas>
+        <div id="startScreenDIV">
+            <button id="startButton" class="disappear"><img src="img/startbutton.png" alt="startknop"></button>
+        </div>
+        <p id="introText" class="disappear">EARTH - Year: 2259</p>
+        <div id="UIInformation">
+            <div id="UIBars">
+                <div id="healthUI">
+                    <img id="healthIcon" class="disappear" src="img/heartIcon.png" alt="Icoontje van een hart">
+                    <progress id="healthBar" class="disappear" value="100" max="100"></progress>
+                </div>
+                <div id="manaUI">
+                    <img id="manaIcon" class="disappear" src="img/swordIcon.png" alt="Icoontje van een zwaard">
+                    <progress id="manaBar" class="disappear" value="0" max="100"></progress>
+                </div>
+            </div>
+            <div id="gearCounter" class="disappear">
+                <img id="gearLogo" class="disappear" src="img/Cog1.png" alt="logo voor hoeveelheid gears">
+                <p id="gearAmountTekst" class="disappear">0</p>
+            </div>
+        </div>
+        <div id="textBlock" class="disappear">
+            <p id="gameText1"></p>
+            <p id="gameText2"></p>
+        </div>
+
+        <div id="endScreen" class="disappear">
+            <p id="LevelComplete">Level Completed</p>
+            <div id="EndScore">
+                <p id="score">Score:</p>
+                <div id="gearsEnd" class="disappear">
+                    <img id="gearsEndIMG" src="img/Cog1.png" alt="gearScore">
+                    <p id="gearsCollectedEnd"></p>
+                </div>
+                <div id="ratsEnd" class="disappear">
+                    <img id="ratsEndIMG" src="img/ratIcon.png" alt="ratScore">
+                    <p id="ratsKilledEnd"></p>
+                </div>
+                <div id="soupsEnd" class="disappear">
+                    <img id="soupsEndIMG" src="img/soupIcon.png" alt="soupScore">
+                    <p id="soupsKilledEnd"></p>
+                </div>
+            </div>
+            <p class="betterWorld">Please be nice to the earth!</p>
+            <p class="betterWorld">Cause we can't reset in <em> REAL LIFE</em></p>
+            <p id="resetText">Press 'R' to reset the game</p>
+            
+        </div>
+    </div>
+
+
+    <script src="script.js" type="module"></script>
+
+</body>
+
+</html>

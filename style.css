@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P';
+    background-color: rgb(46, 46, 46);
+    margin: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#wholeCanvas {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
+canvas {
+    position: absolute;
+    display: block;
+}
+
+#UIInformation {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#textBlock {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 75px;
+    background-color: black;
+    margin-top: 501px;
+    opacity: 0;
+}
+
+#gameText1, #gameText2 {
+    color: white;
+    margin: 0;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+#gearCounter {
+    display: flex;
+    height: 40px;
+    width: 100px;
+    margin-left: 15px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#gearAmountTekst {
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+progress {
+    margin-left: 10px;
+    height: 25px;
+    border-radius: 50px;
+    width: 300px;
+}
+
+progress::-webkit-progress-bar {
+    background: white;
+    border: 2px solid black;
+}
+
+#healthBar::-webkit-progress-value {
+    background-color: #51cc18;
+}
+
+#healthBar::before,
+#manaBar::before {
+    position: absolute;
+    padding: 7px;
+    padding-left: 10px;
+    font-size: 0.8em;
+}
+
+#manaBar::before {
+    content: 'Mana';
+}
+
+#healthBar::before {
+    content: 'Health';
+}
+
+#manaBar::-webkit-progress-value {
+    background-color: #00B7EB;
+}
+
+#healthUI,
+#manaUI {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#healthIcon,
+#manaIcon {
+    height: 20px;
+}
+
+#introText {
+    color: white;
+    position: absolute;
+    margin-left: 10px;
+    font-size: 0.8em;
+    opacity: 0.8;
+}
+
+#startButton {
+    position: absolute;
+    font-family: 'Press Start 2P';
+    font-size: 1.6em;
+    background: transparent;
+    border: 0px transparent;
+    margin-left: 440px;
+    margin-top: 230px;
+}
+
+#endScreen {
+    width: 1024px;
+    height: 576px;
+    background: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+#EndScore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+#gearsEnd, #ratsEnd, #soupsEnd {
+    display: flex;
+    margin: 10px;
+}
+
+#gearsEndIMG, #ratsEndIMG, #soupsEndIMG {
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: right;
+    margin: 10px;
+}
+
+#gearsCollected, #ratsKilled, #soupsKilled {
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+#LevelComplete {
+    font-size: 30px;
+    margin: 50px;
+}
+
+.betterWorld {
+    margin:2px;
+}
+
+em {
+    color: red;
+    text-decoration: none;
+}
+
+#resetText {
+    margin-top: 30px;
+}
+
+.disappear {
+    display: none;
+}
+
+.appear {
+    display: block;
+}
